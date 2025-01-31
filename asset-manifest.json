@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sindhchambal/static/css/main.1ec3985a.css",
-    "main.js": "/sindhchambal/static/js/main.5358a1f4.js",
+    "main.js": "/sindhchambal/static/js/main.709548e3.js",
     "static/media/materialdesignicons-webfont.eot": "/sindhchambal/static/media/materialdesignicons-webfont.52adde0de9840940801f.eot",
     "static/media/materialdesignicons-webfont.ttf?v=5.8.55": "/sindhchambal/static/media/materialdesignicons-webfont.506bc8215df8660d8f04.ttf",
     "static/media/fa-solid-900.svg": "/sindhchambal/static/media/fa-solid-900.18df003f90a7f1313b98.svg",
@@ -43,10 +43,10 @@
     "static/media/logo-light.svg": "/sindhchambal/static/media/logo-light.96c274dae02dae215c95d0a7ef202e3a.svg",
     "static/media/logo.svg": "/sindhchambal/static/media/logo.a0143fa8ed5f53bf9ab4425b9a374176.svg",
     "main.1ec3985a.css.map": "/sindhchambal/static/css/main.1ec3985a.css.map",
-    "main.5358a1f4.js.map": "/sindhchambal/static/js/main.5358a1f4.js.map"
+    "main.709548e3.js.map": "/sindhchambal/static/js/main.709548e3.js.map"
   },
   "entrypoints": [
     "static/css/main.1ec3985a.css",
-    "static/js/main.5358a1f4.js"
+    "static/js/main.709548e3.js"
   ]
 }
