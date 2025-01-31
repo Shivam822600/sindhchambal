@@ -1,0 +1,15 @@
+@import "../../assets/scss/theme.scss";
+
+// .apexcharts-canvas {
+//   text {
+//     fill: $text-muted !important;
+//   }
+// }
+.react-pdf__Page__canvas {
+    margin: 0 auto;
+    width: 80% !important;
+    height: 100% !important;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
