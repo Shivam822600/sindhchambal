@@ -4,11 +4,11 @@ import { Navigate } from "react-router-dom";
 import Dashboard from "../pages/Dashboard/index";
 
 const authProtectedRoutes = [
-  { path: "/dashboard", component: <Dashboard /> },
+  { path: "/sindhchambal", component: <Dashboard /> },
   {
     path: "/",
     exact: true,
-    component: <Navigate to="/dashboard" />,
+    component: <Navigate to="/sindhchambal" />,
   },
 ];
 
