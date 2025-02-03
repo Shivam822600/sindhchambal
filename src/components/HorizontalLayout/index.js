@@ -16,8 +16,6 @@ import {
 import { useSelector, useDispatch } from "react-redux";
 import { createSelector } from "reselect";
 
-//components
-import Navbar from "./Navbar";
 import Header from "./Header";
 import Footer from "./Footer";
 import RightSidebar from "../CommonForBoth/RightSidebar";
@@ -144,7 +142,7 @@ const Layout = (props) => {
           isMenuOpened={isMenuOpened}
           openLeftMenuCallBack={openMenu}
         />
-        <Navbar menuOpen={isMenuOpened} />
+        {/* <Navbar menuOpen={isMenuOpened} /> */}
         <div className="main-content">{props.children}</div>
         <Footer />
       </div>

@@ -4,10 +4,9 @@ import PropTypes from "prop-types";
 
 
 // //Import Scrollbar
-import SimpleBar from "simplebar-react";
+// import SimpleBar from "simplebar-react";
 
-// MetisMenu
-import MetisMenu from "metismenujs";
+
 import withRouter from "components/Common/withRouter";
 import { Link } from "react-router-dom";
 
@@ -121,10 +120,10 @@ const SidebarContent = props => {
     ref.current.recalculate();
   }, []);
 
-  useEffect(() => {
-    new MetisMenu("#side-menu");
-    activeMenu();
-  }, []);
+  // useEffect(() => {
+  //   new MetisMenu("#side-menu");
+  //   activeMenu();
+  // }, []);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -142,7 +141,7 @@ const SidebarContent = props => {
 
   return (
     <React.Fragment>
-      <SimpleBar className="h-100" ref={ref}>
+      {/* <SimpleBar className="h-100" ref={ref}>
         <div id="sidebar-menu">
           <ul className="metismenu list-unstyled" id="side-menu">
             <li className="menu-title">{props.t("Menu")} </li>
@@ -600,11 +599,7 @@ const SidebarContent = props => {
                     {props.t("Notifications")}
                   </Link>
                 </li>
-                {/* <li>
-                  <Link to="#">
-                    {props.t("Breadcrumb")}
-                  </Link>
-                </li> */}
+               
                 <li>
                   <Link to="#">
                     {props.t("Utilities")}
@@ -652,9 +647,7 @@ const SidebarContent = props => {
                 <li>
                   <Link to="#">{props.t("Form Mask")}</Link>
                 </li>
-                {/* <li>
-                  <Link to="/dual-listbox">{props.t("Transfer List")}</Link>
-                </li> */}
+          
               </ul>
             </li>
 
@@ -670,14 +663,7 @@ const SidebarContent = props => {
                 <li>
                   <Link to="#">{props.t("Data Tables")}</Link>
                 </li>
-                {/* <li>
-                  <Link to="/tables-responsive">
-                    {props.t("Responsive Table")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/tables-dragndrop">{props.t("Drag & Drop Table")}</Link>
-                </li> */}
+             
               </ul>
             </li>
 
@@ -773,7 +759,7 @@ const SidebarContent = props => {
             </li>
           </ul>
         </div>
-      </SimpleBar>
+      </SimpleBar> */}
     </React.Fragment>
   );
 };

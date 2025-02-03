@@ -16,7 +16,7 @@ import {
 } from "../../store/actions";
 
 //SimpleBar
-import SimpleBar from "simplebar-react";
+// import SimpleBar from "simplebar-react";
 
 import { Link } from "react-router-dom";
 
@@ -46,7 +46,7 @@ const RightSidebar = props => {
   return (
     <React.Fragment>
       <div className="right-bar" id="right-bar">
-        <SimpleBar style={{ height: "900px" }}>
+        {/* <SimpleBar style={{ height: "900px" }}>
           <div data-simplebar className="h-100">
             <div className="rightbar-title px-3 py-4">
               <Link
@@ -542,27 +542,7 @@ const RightSidebar = props => {
                 </React.Fragment>
               ) : null}
 
-              {/* <FormGroup>
-              <span className="mb-2 d-block" id="radio-title">
-                Preloader
-              </span>
-
-              <div className="form-check form-switch">
-                <input
-                  type="checkbox"
-                  className="form-check-input checkbox"
-                  id="checkbox_1"
-                  checked={props.isPreloader}
-                  onChange={() => {
-                    props.changePreloader(!props.isPreloader);
-                  }}
-                />
-
-                <label className="form-check-label" htmlFor="checkbox_1">
-                  Preloader
-                </label>
-              </div>
-            </FormGroup> */}
+             
 
               <h6 className="text-center">Choose Layouts</h6>
 
@@ -593,7 +573,7 @@ const RightSidebar = props => {
               </Link>
             </div>
           </div>
-        </SimpleBar>
+        </SimpleBar> */}
       </div>
       <div className="rightbar-overlay"></div>
     </React.Fragment>
