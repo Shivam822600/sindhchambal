@@ -20,20 +20,19 @@ import { createSelector } from "reselect";
 import Navbar from "./Navbar";
 import Header from "./Header";
 import Footer from "./Footer";
-// import RightSidebar from "../CommonForBoth/RightSidebar";
+import RightSidebar from "../CommonForBoth/RightSidebar";
 
 const Layout = (props) => {
 
   const dispatch = useDispatch();
-  const selectLayoutState = (state) => state.Layout;
 
   const selectLayoutProperties = createSelector(
-    selectLayoutState,
+    (state) => state.Layout,
     (layout) => ({
       topbarTheme: layout.topbarTheme,
       layoutWidth: layout.layoutWidth,
       isPreloader: layout.isPreloader,
-      showRightSidebar: layout.showRightSidebar,      
+      showRightSidebar: layout.showRightSidebar,
       layoutModeType: layout.layoutModeType,
     })
   );
@@ -145,12 +144,12 @@ const Layout = (props) => {
           isMenuOpened={isMenuOpened}
           openLeftMenuCallBack={openMenu}
         />
-        {/* <Navbar menuOpen={isMenuOpened} /> */}
+        <Navbar menuOpen={isMenuOpened} />
         <div className="main-content">{props.children}</div>
         <Footer />
       </div>
 
-      {/* {showRightSidebar ? <RightSidebar /> : null} */}
+      {showRightSidebar ? <RightSidebar /> : null}
     </React.Fragment>
   );
 };

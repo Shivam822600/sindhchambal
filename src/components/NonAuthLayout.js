@@ -8,16 +8,15 @@ import { changeLayoutMode } from 'store/actions';
 const NonAuthLayout = (props) => {
   const dispatch = useDispatch();
 
-  const selectLayoutModeState = (state) => state.Layout;
   const LayoutModeProperties = createSelector(
-    selectLayoutModeState,
-      (layout) => ({
-        layoutModeType: layout.layoutModeType,
-      })
+    (state) => state.Layout,
+    (layout) => ({
+      layoutModeType: layout.layoutModeType,
+    })
   );
 
-    const {
-      layoutModeType
+  const {
+    layoutModeType
   } = useSelector(LayoutModeProperties);
 
   useEffect(() => {

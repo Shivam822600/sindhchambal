@@ -36,6 +36,7 @@
     }
 
     .btn {
+        border: none;
         padding: 6px;
         box-shadow: none;
         font-size: 20px;
@@ -50,6 +51,7 @@
 
 .chat-list {
     margin: 0;
+
     li {
         &.active {
             a {
@@ -58,6 +60,7 @@
                 box-shadow: $box-shadow;
             }
         }
+
         a {
             display: block;
             padding: 14px 16px;
@@ -65,6 +68,7 @@
             transition: all 0.4s;
             border-top: 1px solid var(--#{$prefix}border-color);
             border-radius: 4px;
+
             &:hover {
                 background-color: var(--#{$prefix}secondary-bg);
                 border-color: transparent;
@@ -123,10 +127,12 @@
             background-color: var(--#{$prefix}border-color);
             top: 10px;
         }
+
         .badge {
             font-size: 12px;
         }
     }
+
     .conversation-list {
         margin-bottom: 24px;
         display: inline-block;
@@ -147,10 +153,12 @@
 
         .dropdown {
             float: right;
+
             .dropdown-toggle {
                 font-size: 18px;
                 padding: 4px;
                 color: var(--#{$prefix}secondary-color);
+
                 @media (max-width: 575.98px) {
                     display: none;
                 }
@@ -170,11 +178,13 @@
     .right {
         .conversation-list {
             float: right;
+
             .ctext-wrap {
                 background-color: var(--#{$prefix}light);
                 text-align: right;
                 border-radius: 8px 8px 0px 8px;
             }
+
             .dropdown {
                 float: left;
             }
@@ -225,6 +235,7 @@
     right: 16px;
     top: 50%;
     transform: translateY(-50%);
+
     li {
         a {
             font-size: 16px;

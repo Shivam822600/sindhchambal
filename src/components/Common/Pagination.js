@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useEffect } from "react";
-import { Row } from "reactstrap";
+import { Col, Row } from "reactstrap";
 
 const Paginations = ({ perPageData, data, currentPage, setCurrentPage, isShowingPageLength, paginationDiv, paginationClass }) => {
 
@@ -33,9 +33,9 @@ const Paginations = ({ perPageData, data, currentPage, setCurrentPage, isShowing
     return (
         <React.Fragment>
             <Row className="justify-content-between align-items-center">
-                {isShowingPageLength && <div className="col-sm">
-                    <div className="text-muted">Showing <span className="fw-semibold">{perPageData}</span> of <span className="fw-semibold">{data?.length}</span> entries</div>
-                </div>}
+                {isShowingPageLength && <Col sm={12} md={5}>
+                    <div className="text-muted dataTables_info">Showing {perPageData} of {data?.length} entries</div>
+                </Col>}
                 <div className={paginationDiv}>
                     <ul className={paginationClass}>
                         <li className={`page-item ${currentPage <= 1 ? "disabled" : ''}`}>

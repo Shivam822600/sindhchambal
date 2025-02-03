@@ -24,20 +24,19 @@ import { createSelector } from 'reselect';
 
 const Layout = props => {
   const dispatch = useDispatch();
-  const selectLayoutState = (state) => state.Layout;
 
   const selectLayoutProperties = createSelector(
-      selectLayoutState,
-      (layout) => ({
-    isPreloader: layout.isPreloader,
-    layoutModeType: layout.layoutModeType,
-    leftSideBarThemeImage: layout.leftSideBarThemeImage,
-    leftSideBarType: layout.leftSideBarType,
-    layoutWidth: layout.layoutWidth,
-    topbarTheme: layout.topbarTheme,
-    showRightSidebar: layout.showRightSidebar,
-    leftSideBarTheme: layout.leftSideBarTheme,
-  }));
+    (state) => state.Layout,
+    (layout) => ({
+      isPreloader: layout.isPreloader,
+      layoutModeType: layout.layoutModeType,
+      leftSideBarThemeImage: layout.leftSideBarThemeImage,
+      leftSideBarType: layout.leftSideBarType,
+      layoutWidth: layout.layoutWidth,
+      topbarTheme: layout.topbarTheme,
+      showRightSidebar: layout.showRightSidebar,
+      leftSideBarTheme: layout.leftSideBarTheme,
+    }));
 
   const {
     isPreloader,
@@ -48,7 +47,7 @@ const Layout = props => {
     showRightSidebar,
     leftSideBarTheme,
     layoutModeType
-} = useSelector(selectLayoutProperties);    
+  } = useSelector(selectLayoutProperties);
 
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
@@ -130,13 +129,14 @@ const Layout = props => {
 
   return (
     <React.Fragment>
+
       <div id="layout-wrapper">
         <Header toggleMenuCallback={toggleMenuCallback} />
-        {/* <Sidebar
+        <Sidebar
           theme={leftSideBarTheme}
           type={leftSideBarType}
           isMobile={isMobile}
-        /> */}
+        />
         <div className="main-content">{props.children}</div>
         <Footer />
       </div>

@@ -106,5 +106,5 @@ export {
   postJwtRegister,
   postJwtLogin,
   postJwtForgetPwd,
-  postJwtProfile
+  postJwtProfile,
 };

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import { Dropdown, DropdownToggle, DropdownMenu, Row, Col } from "reactstrap";
-// import SimpleBar from "simplebar-react";
+import SimpleBar from "simplebar-react";
 
 //Import images
 import avatar3 from "../../../assets/images/users/avatar-3.jpg";
@@ -47,7 +47,7 @@ const NotificationDropdown = props => {
             </Row>
           </div>
 
-          {/* <SimpleBar style={{ height: "230px" }}>
+          <SimpleBar style={{ height: "230px" }}>
             <Link to="" className="text-reset notification-item">
               <div className="d-flex">
                 <div className="avatar-xs me-3">
@@ -144,7 +144,7 @@ const NotificationDropdown = props => {
                 </div>
               </div>
             </Link>
-          </SimpleBar> */}
+          </SimpleBar>
           <div className="p-2 border-top d-grid">
             <Link className="btn btn-sm btn-link font-size-14 text-center" to="#">
               <i className="mdi mdi-arrow-right-circle me-1"></i> <span key="t-view-more">{props.t("View More..")}</span>

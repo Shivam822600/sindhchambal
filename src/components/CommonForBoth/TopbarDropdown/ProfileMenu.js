@@ -93,11 +93,7 @@ ProfileMenu.propTypes = {
   t: PropTypes.any
 };
 
-const mapStatetoProps = state => {
-  const { error, success } = state.Profile;
-  return { error, success };
-};
 
-export default withRouter(
-  connect(mapStatetoProps, {})(withTranslation()(ProfileMenu))
+
+export default withRouter((withTranslation()(ProfileMenu))
 );

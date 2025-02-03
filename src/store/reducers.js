@@ -4,9 +4,11 @@ import { combineReducers } from "redux";
 import Layout from "./layout/reducer";
 
 
+
 const rootReducer = combineReducers({
   // public
   Layout,
+
 });
 
 export default rootReducer;

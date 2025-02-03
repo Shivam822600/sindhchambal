@@ -61,7 +61,7 @@
         padding-right: 20px;
         background-color: var(--#{$prefix}topbar-search-bg);
         box-shadow: none;
-        // border-radius: 30px;
+        border-radius: 30px;
     }
     span {
         position: absolute;
@@ -172,7 +172,9 @@
     }
 
     &:hover {
-        background-color: var(--#{$prefix}header-dark-bg);
+        // background-color: var(--#{$prefix}header-dark-bg);
+        border-color: var(--#{$prefix}border-color);
+
     }
 }
 
@@ -278,7 +280,7 @@ body[data-layout="horizontal"] {
         width: auto;
     }
     .page-content {
-        margin-top: $header-top-height;
+        margin-top: $header-height;
         padding: calc(55px + #{$grid-gutter-width}) calc(#{$grid-gutter-width} * 0.5) $footer-height calc(#{$grid-gutter-width} * 0.5);
     }    
 }

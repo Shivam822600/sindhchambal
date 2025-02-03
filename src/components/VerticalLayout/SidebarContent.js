@@ -165,7 +165,7 @@ const SidebarContent = props => {
                   <Link to="#">{props.t("Blog")}</Link>
                 </li>
                 <li>
-                  <Link to="#">
+                  <Link to="#">                    
                     {props.t("Job")}
                   </Link>
                 </li>
@@ -277,7 +277,7 @@ const SidebarContent = props => {
                 </li>
                 <li>
                   <Link to="/#" className="has-arrow ">
-                    <span key="#">{props.t("Templates")}</span>
+                    <span key="t-email-templates">{props.t("Templates")}</span>
                   </Link>
                   <ul className="sub-menu">
                     <li>
@@ -394,7 +394,7 @@ const SidebarContent = props => {
             </li>
 
             <li>
-              <Link to="/#" className="has-arrow">
+              <Link to="/#" className="has-arrow">                
                 <i className="bx bx-briefcase-alt"></i>
                 <span key="t-jobs">{props.t("Jobs")}</span>
               </Link>
@@ -608,7 +608,7 @@ const SidebarContent = props => {
                 <li>
                   <Link to="#">
                     {props.t("Utilities")}
-
+                    
                   </Link>
                 </li>
               </ul>
@@ -743,7 +743,7 @@ const SidebarContent = props => {
                 <li>
                   <Link to="#">{props.t("Google Maps")}</Link>
                 </li>
-
+                
               </ul>
             </li>
 

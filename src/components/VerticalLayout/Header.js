@@ -10,8 +10,8 @@ import { Dropdown, DropdownToggle, DropdownMenu } from "reactstrap";
 
 // Import menuDropdown
 import LanguageDropdown from "../CommonForBoth/TopbarDropdown/LanguageDropdown";
-// import NotificationDropdown from "../CommonForBoth/TopbarDropdown/NotificationDropdown";
-// import ProfileMenu from "../CommonForBoth/TopbarDropdown/ProfileMenu";
+import NotificationDropdown from "../CommonForBoth/TopbarDropdown/NotificationDropdown";
+import ProfileMenu from "../CommonForBoth/TopbarDropdown/ProfileMenu";
 import megamenuImg from "../../assets/images/megamenu-img.png";
 
 // import images
@@ -85,20 +85,20 @@ const Header = props => {
           <div className="d-flex">
 
             <div className="navbar-brand-box d-lg-none d-md-block">
-              {/* <Link to="/" className="logo logo-dark">
+              <Link to="/" className="logo logo-dark">
                 <span className="logo-sm">
                   <img src={logo} alt="" height="22" />
                 </span>
-              </Link> */}
+              </Link>
 
-              {/* <Link to="/" className="logo logo-light">
+              <Link to="/" className="logo logo-light">
                 <span className="logo-sm">
                   <img src={logoLightSvg} alt="" height="22" />
                 </span>
-              </Link> */}
+              </Link>
             </div>
 
-            {/* <button
+            <button
               type="button"
               onClick={() => {
                 tToggle();
@@ -107,7 +107,7 @@ const Header = props => {
               id="vertical-menu-btn"
             >
               <i className="fa fa-fw fa-bars" />
-            </button> */}
+            </button>
 
             <form className="app-search d-none d-lg-block">
               <div className="position-relative">
@@ -385,8 +385,8 @@ const Header = props => {
               </button>
             </div>
 
-            {/* <NotificationDropdown /> */}
-            {/* <ProfileMenu /> */}
+            <NotificationDropdown />
+            <ProfileMenu />
 
             <div
                onClick={() => {

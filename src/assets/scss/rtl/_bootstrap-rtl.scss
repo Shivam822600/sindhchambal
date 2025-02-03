@@ -39,6 +39,7 @@ ul {
 .btn-label {
   padding-right: 44px;
   padding-left: 12px;
+
   .label-icon {
     left: auto;
     right: 0;
@@ -71,6 +72,7 @@ ul {
         // @include border-right-radius($border-radius); //rtl
       }
     }
+
     &:last-child {
       .page-link {
         border-top-right-radius: 0px;
@@ -129,6 +131,7 @@ dd {
 
 .alert-dismissible {
   padding-right: $alert-padding-x;
+
   .btn-close {
     left: 0;
     right: auto;
@@ -138,7 +141,7 @@ dd {
 // Breadcrumb item arrow
 
 .breadcrumb-item {
-  + .breadcrumb-item {
+  +.breadcrumb-item {
     padding-right: 0.5rem;
     padding-left: 0px;
   }
@@ -191,6 +194,7 @@ dd {
 
 .form-switch {
   padding-right: 2.5em !important;
+
   .form-check-input:checked {
     background-position: left center;
   }
@@ -198,6 +202,7 @@ dd {
 
 .form-switch-md {
   padding-right: 2.5rem !important;
+
   .form-check-input {
     right: -0.5rem;
   }
@@ -205,6 +210,7 @@ dd {
 
 .form-switch-lg {
   padding-right: 2.75rem !important;
+
   .form-check-input {
     right: -0.75rem;
   }
@@ -229,6 +235,7 @@ dd {
 
   .custom-control-label {
     display: block;
+
     &:before,
     &:after {
       right: auto;
@@ -249,6 +256,10 @@ dd {
   padding: 0.47rem 0.75rem 0.47rem 1.75rem;
 }
 
+[dir="rtl"] .form-select {
+  padding: 0.47rem 2rem 0.47rem 0rem !important;
+}
+
 .form-select-sm {
   padding-right: 0.5rem;
   padding-top: 0.25rem;
@@ -261,6 +272,7 @@ dd {
   text-align: right;
   padding-right: 1.5em;
   padding-left: 0;
+
   .form-check-input {
     float: right;
     margin-right: -1.5em;
@@ -322,6 +334,7 @@ dd {
 .custom-switch-md {
   padding-right: 3rem;
   padding-left: 0;
+
   .custom-control-label {
     &:before {
       left: auto;
@@ -334,7 +347,7 @@ dd {
     }
   }
 
-  .custom-control-input:checked ~ .custom-control-label::after {
+  .custom-control-input:checked~.custom-control-label::after {
     transform: translateX(-1.25rem);
   }
 }
@@ -342,6 +355,7 @@ dd {
 .custom-switch-lg {
   padding-right: 3.75rem;
   padding-left: 0;
+
   .custom-control-label {
     &:before {
       left: auto;
@@ -354,7 +368,7 @@ dd {
     }
   }
 
-  .custom-control-input:checked ~ .custom-control-label::after {
+  .custom-control-input:checked~.custom-control-label::after {
     transform: translateX(-1.5rem);
   }
 }
@@ -363,7 +377,7 @@ dd {
 
 // custom-checkbox-outline
 .custom-checkbox-outline {
-  .custom-control-input:checked ~ .custom-control-label:after {
+  .custom-control-input:checked~.custom-control-label:after {
     left: auto;
     right: -28px;
   }
@@ -371,7 +385,7 @@ dd {
 
 // custom-radio-outline
 .custom-radio-outline {
-  .custom-control-input:checked ~ .custom-control-label:after {
+  .custom-control-input:checked~.custom-control-label:after {
     left: auto;
     right: -20px;
   }
@@ -403,8 +417,7 @@ dd {
 //     border-bottom-left-radius: 0;
 // }
 
-.input-group
-  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+.input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
   margin-right: -1px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -412,9 +425,8 @@ dd {
   border-bottom-left-radius: $input-border-radius;
 }
 
-.input-group:not(.has-validation)
-  > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu),
-.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n + 3) {
+.input-group:not(.has-validation)> :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu),
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n + 3) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-top-right-radius: $input-border-radius;
@@ -445,8 +457,15 @@ dd {
   margin-right: auto;
   margin-left: unset;
 }
-.wizard > .actions > ul {
+
+.wizard>.actions>ul {
   display: block;
   text-align: left;
   padding-right: 0;
+}
+
+// job detail
+
+[dir="rtl"] .job-vstack {
+  padding-right: 2em !important;
 }
