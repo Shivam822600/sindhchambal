@@ -8,9 +8,8 @@
 .page-content {
   display: flex;
   flex-direction: column;
-  height: 100vh; // Ensure full height
+  height: calc(100vh - 255px); // Ensure full height
 }
-
 .react-pdf__Page__canvas {
   margin: 0 auto;
   width: 80% !important;

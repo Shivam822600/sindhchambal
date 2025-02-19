@@ -45,10 +45,10 @@ const Header = props => {
           <div className="d-flex">
             <div className="navbar-brand-box">
               <div className="logo logo-dark">
-                <span className="logo-sm fs-18">
+                <span className="logo-sm fs-18 fw-16" style={{fontWeight:600}}>
                   Sindh Chambal Sanctuary
                 </span>
-                <span className="logo-lg fs-18">
+                <span className="logo-lg fs-18 fw-16" style={{fontWeight:600}}>
                   Sindh Chambal Sanctuary
                   {/* <img src={logoDark} alt="" height="17" /> */}
                 </span>
