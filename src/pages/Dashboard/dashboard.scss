@@ -5,24 +5,31 @@
 //     fill: $text-muted !important;
 //   }
 // }
+.page-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; // Ensure full height
+}
+
 .react-pdf__Page__canvas {
-    margin: 0 auto;
-    width: 80% !important;
-    height: 100% !important;
+  margin: 0 auto;
+  width: 80% !important;
+  height: 100% !important;
 }
-.cursor-pointer{
-    cursor: pointer;
+
+.cursor-pointer {
+  cursor: pointer;
 }
+
 .pdf-container {
-    position: relative;
-    width: 90%;
-    height: 500px;
-    overflow: auto;
-    z-index: 1;
-  }
-  
-  button {
-    position: relative;
-    z-index: 10; // Make sure buttons are above the PDF
-  }
-  
+  position: relative;
+  width: 90%;
+  height: 500px;
+  overflow: auto;
+  z-index: 1;
+}
+
+button {
+  position: relative;
+  z-index: 10; // Make sure buttons are above the PDF
+}
