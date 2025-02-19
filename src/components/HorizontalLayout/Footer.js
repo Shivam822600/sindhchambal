@@ -1,73 +1,85 @@
 import React from "react"
-import { Container, Row, Col } from "reactstrap"
+import { useNavigate } from "react-router-dom"
+import { Container, Row, Col, Button } from "reactstrap"
 
 const Footer = () => {
-  return (
-    <React.Fragment>
-      <footer className="footer">
-        <Container fluid={true}>
-          <footer className="bg-light text-center text-lg-start">
-            <div className="container p-4">
-              {/* Feedback and Advertisement Info */}
-              <div className="row">
-                <div className="col-md-6 mb-4">
-                  <h6>For epaper related feedback and queries please email us on:</h6>
-                  <a href="mailto:yashaswini.shekar@erelego.com">
-                    sanjeevsharma@gmail.com
-                  </a>{' '}
-                  or{' '}
-                  <a href="mailto:sudeer@erelego.com">SindhChambal@gmail.com</a>
-                </div>
-                <div className="col-md-6 mb-4">
-                  <h6>For digital advertisement queries please email us at:</h6>
-                  <a href="mailto:sudeer@erelego.com">gouravsharma@gmail.com</a>
-                </div>
-              </div>
+  const navigate = useNavigate()
 
-              {/* Popup Contact Info */}
-              <div className="row mt-3">
-                <div className="col-md-12 text-center">
-                  <button
-                    className="btn btn-outline-primary"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#contactInfo"
-                    aria-expanded="false"
-                    aria-controls="contactInfo"
-                  >
-                    Contact Information
-                  </button>
-                  <div className="collapse mt-3" id="contactInfo">
-                    <div className="card card-body">
-                      For Information:{' '}
-                      <a href="mailto:swadeshbhopal@gmail.com">
-                        swadeshbhopal@gmail.com
-                      </a>
-                      <br />
-                      For Advertisement:{' '}
-                      <a href="mailto:advt.swadeshbhopal@gmail.com">
-                        advt.gouravsharma@gmail.com
-                      </a>
-                    </div>
-                  </div>
-                </div>
+  return (
+    <footer className="bg-light text-center text-lg-start p-3">
+      <Container fluid={true}>
+        <Row className="text-center">
+          {/* Navigation Links */}
+          <Col xs={12} sm={4} className="mb-3">
+            <h6 className="fw-bold">Quick Links</h6>
+            <ul className="list-unstyled d-flex flex-column align-items-center">
+              <li className="mb-2"><span onClick={()=>navigate('/')} className="text-dark">Home</span></li>
+              <li className="mb-2"><span  onClick={()=>navigate('/about')} className="text-dark">About</span></li>
+              <li><span  onClick={()=>navigate('/contact')}  className="text-dark">Contact us</span></li>
+            </ul>
+          </Col>
+
+          {/* Feedback and Advertisement Info */}
+          <Col xs={12} sm={4} className="mb-3">
+            <h6 className="fw-bold">Feedback & Queries</h6>
+            <p className="small">
+
+              <a href="mailto:sindhchambal201@gmail.com">sindhchambal201@gmail.com</a>
+            </p>
+          </Col>
+
+          <Col xs={12} sm={4} className="mb-3">
+            <h6 className="fw-bold">Advertisement Queries</h6>
+            <p className="small">
+              <a href="mailto:gourav00466@gmail.com">gourav00466@gmail.com</a> <br />
+              <a href="mailto:sindhchambal202@gmail.com">sindhchambal202@gmail.com</a>
+            </p>
+          </Col>
+        </Row>
+
+        {/* Popup Contact Info */}
+        <Row>
+          <Col xs={12} className="text-center">
+            <Button
+              color="primary"
+              outline
+              size="sm"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#contactInfo"
+              aria-expanded="false"
+              aria-controls="contactInfo"
+            >
+              Contact Information
+            </Button>
+            <div className="collapse mt-2" id="contactInfo">
+              <div className="card card-body small">
+                <p>
+                  <strong>Info:</strong>{" "}
+                  <a href="mailto:swadeshbhopal@gmail.com">swadeshbhopal@gmail.com</a>
+                </p>
+                <p>
+                  <strong>Ads:</strong>{" "}
+                  <a href="mailto:advt.gourav00466@gmail.com">advt.gourav00466@gmail.com</a>
+                </p>
               </div>
             </div>
-            {/* Footer Bottom */}
-            <div className="text-center p-3 bg-dark text-light">
-              © 2025{' '}
-              <a
-                href="https://www.SCS.com"
-                className="text-light text-decoration-none"
-              >
-                Sindh Chambal
-              </a>{' '}
-              Made in India. Designed by SCS Software
-            </div>
-          </footer>
-        </Container>
-      </footer>
-    </React.Fragment>
+          </Col>
+        </Row>
+      </Container>
+
+      {/* Footer Bottom */}
+      <div className="text-center p-2 bg-dark text-light small mt-3">
+        © 2025{" "}
+        <a
+          href="https://www.SCS.com"
+          className="text-light text-decoration-none"
+        >
+          Sindh Chambal
+        </a>{" "}
+        | Made in India. Designed by SCS Software
+      </div>
+    </footer>
   )
 }
 

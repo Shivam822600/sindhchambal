@@ -13,3 +13,16 @@
 .cursor-pointer{
     cursor: pointer;
 }
+.pdf-container {
+    position: relative;
+    width: 90%;
+    height: 500px;
+    overflow: auto;
+    z-index: 1;
+  }
+  
+  button {
+    position: relative;
+    z-index: 10; // Make sure buttons are above the PDF
+  }
+  
